@@ -6,7 +6,32 @@
         xmlns:local="clr-namespace:GA_DavidAbarca_List"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Canvas>
+        <RichTextBox Height="131" Width="312" Canvas.Top="60" Canvas.Left="30">
+            <FlowDocument>
+                <Paragraph>
+                    <Run x:Name="rtbDisplay"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Label x:Name="lblCount" Content="Current Count" Canvas.Left="127" Canvas.Top="29" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label Content="Student Name" Canvas.Left="547" Canvas.Top="29"/>
+        <TextBox x:Name="txtStudentName" Canvas.Left="530" TextWrapping="Wrap" Canvas.Top="60" Width="120"/>
+        <Button x:Name="btnAddStudent" Content="Add Student" Canvas.Left="557" Canvas.Top="111" Click="btnAssStudent_Click"/>
+        <Label Content="Enter an index" Canvas.Left="549" Canvas.Top="165" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBox x:Name="txtIndex" Canvas.Left="530" TextWrapping="Wrap" Canvas.Top="199" Width="120"/>
+        <Button x:Name="btnDisplayStudent" Content="Display Student Name" Canvas.Left="531" Canvas.Top="234" Click="btnDisplayStudent_Click"/>
+        <Button x:Name="btnRemoveByIndex" Content="Remove by Index" Canvas.Left="521" Canvas.Top="273" HorizontalAlignment="Left" VerticalAlignment="Top" Width="143" Click="btnRemoveByIndex_Click"/>
+        <Button x:Name="btnAddAtIndex" Content="Add Student At Index" Canvas.Left="533" Canvas.Top="306" Click="btnAddAtIndex_Click"/>
+        <Button x:Name="btnClear" Content="Clear List" Canvas.Left="570" Canvas.Top="340" Click="btnClear_Click"/>
 
-    </Grid>
+
+
+
+
+
+
+
+
+    </Canvas>
 </Window>
